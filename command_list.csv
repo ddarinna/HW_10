@@ -1,0 +1,22 @@
+    1  git clone https://github.com/ddarinna/HW_10.git
+    2  cd HW_10
+    3  touch text_ignore.txt
+    4  nano .gitignore
+    5  git status
+    6  git add .
+    7  git commit -m "text_ignore.txt"
+    8  touch main_test.txt
+    9  git add .
+   10  git commit -m "main_test.txt"
+   11  git branch develop
+   12  git checkout develop
+   13  touch develop_test.txt
+   14  git add .
+   15  git commit -m "develop_test.txt"
+   16  nano develop_test.txt
+   17  git status
+   18  git add .
+   19  git commit -m "develop_test.txt"
+   20  git checkout main
+   21  git merge develop
+   22  git log
